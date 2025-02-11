@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>JavaScript & jQuery Practice</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("jsButton").addEventListener("click", function() {
+                document.getElementById("jsText").style.display = "none";
+            });
+        });
+
+        $(document).ready(function(){
+            $("#jqButton").click(function(){
+                $("#jqText").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>JavaScript & jQuery Example</h2>
+    
+    <p id="jsText">Hello my name is Apoorva.</p>
+    <button id="jsButton">Hide</button>
+    
+    <p id="jqText">This is IWP.</p>
+    <button id="jqButton">Hide</button>
+</body>
+</html>
